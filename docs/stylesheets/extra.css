@@ -1,0 +1,29 @@
+/* Palette drawn from the Rwandan landscape: hill green, lake-sky blue, sun gold */
+:root {
+  --md-primary-fg-color: #1f5c3a;
+  --md-primary-fg-color--light: #2f7a50;
+  --md-primary-fg-color--dark: #164229;
+  --md-accent-fg-color: #0e86c2;
+  --bda-sun: #e5b800;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1c4d33;
+  --md-accent-fg-color: #4fb3e8;
+  --md-default-bg-color: #12181a;
+  --bda-sun: #f2cf3c;
+}
+.md-typeset h1 { font-weight: 700; letter-spacing: -0.01em; color: var(--md-primary-fg-color); }
+[data-md-color-scheme="slate"] .md-typeset h1 { color: #8fd3a8; }
+.md-typeset h2 { border-bottom: 2px solid var(--bda-sun); padding-bottom: .2em; }
+.md-typeset table:not([class]) { font-size: .72rem; }
+.md-typeset table:not([class]) th { background: var(--md-primary-fg-color); color: #fff; }
+
+/* Home page */
+.bda-hero { padding: 1.5rem 0 1rem; }
+.bda-hero h1 { font-size: 2.4rem; line-height: 1.15; margin-bottom: .4rem; max-width: 22ch; }
+.bda-hero p { font-size: 1rem; max-width: 60ch; }
+.bda-path { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .8rem; margin: 1.2rem 0; }
+.bda-path a { display: block; border-left: 4px solid var(--md-primary-fg-color); padding: .6rem .8rem; background: var(--md-code-bg-color); color: var(--md-typeset-color); }
+.bda-path a:hover, .bda-path a:focus { border-left-color: var(--bda-sun); }
+.bda-path strong { display: block; color: var(--md-primary-fg-color--light); }
+[data-md-color-scheme="slate"] .bda-path strong { color: #8fd3a8; }

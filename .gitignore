@@ -1,0 +1,13 @@
+site/
+labs/data/*
+!labs/data/.gitkeep
+*.parquet
+*.csv
+*.gz
+spark-warehouse/
+metastore_db/
+derby.log
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+chk/

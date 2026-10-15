@@ -1,0 +1,32 @@
+name: bda
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - openjdk=17
+  - numpy
+  - pandas
+  - pyarrow
+  - polars
+  - python-duckdb
+  - dask
+  - distributed
+  - pyspark>=4.0
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - memory_profiler
+  - numba
+  - geopandas
+  - h3-py>=4
+  - xarray
+  - rioxarray
+  - netcdf4
+  - networkx
+  - requests
+  - faker
+  - pytest
+  - pip
+  - pip:
+      - deltalake

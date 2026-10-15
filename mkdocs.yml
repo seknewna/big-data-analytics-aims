@@ -1,0 +1,116 @@
+site_name: Big Data Analytics with Python
+site_description: From theory to practice — a Masters course at AIMS Rwanda
+site_author: AIMS Rwanda — Big Data Analytics
+# Change these two lines to match your GitHub account and repository name
+site_url: https://seknewna.github.io/big-data-analytics-aims/
+repo_url: https://github.com/seknewna/big-data-analytics-aims
+repo_name: big-data-analytics-aims
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    logo: material/database-cog
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - pymdownx.mark
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Course guide:
+      - Syllabus & schedule: syllabus.md
+      - Environment setup: setup.md
+  - Chapters:
+      - 1. What is big data?: chapters/01-introduction.md
+      - 2. Python at scale on one machine: chapters/02-python-at-scale.md
+      - 3. Storage, file formats & data lakes: chapters/03-storage-formats.md
+      - 4. Distributed computing & MapReduce: chapters/04-distributed-computing.md
+      - 5. Polars, DuckDB & Dask: chapters/05-polars-duckdb-dask.md
+      - 6. Apache Spark fundamentals: chapters/06-spark-fundamentals.md
+      - 7. Spark SQL & performance tuning: chapters/07-spark-sql-performance.md
+      - 8. Machine learning at scale: chapters/08-ml-at-scale.md
+      - 9. Streaming analytics: chapters/09-streaming.md
+      - 10. Geospatial & satellite big data: chapters/10-geospatial.md
+      - 11. Text & graph analytics at scale: chapters/11-text-graph.md
+      - 12. Pipelines, orchestration & the cloud: chapters/12-pipelines-cloud.md
+      - 13. Ethics, privacy & governance: chapters/13-ethics-governance.md
+  - Assignments:
+      - Overview & grading: assignments/index.md
+      - A1 Formats & single-node engines: assignments/a1-formats-engines.md
+      - A2 MapReduce & Spark: assignments/a2-spark.md
+      - A3 Machine learning at scale: assignments/a3-ml.md
+      - A4 Streaming: assignments/a4-streaming.md
+      - A5 Geospatial Rwanda: assignments/a5-geospatial.md
+      - Capstone project: assignments/capstone.md
+  - Resources:
+      - Big data sources: resources/data-sources.md
+      - Cheat sheets: resources/cheatsheets.md
+      - Glossary: resources/glossary.md
+      - Further reading: resources/reading.md
